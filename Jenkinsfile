@@ -1,11 +1,7 @@
 pipeline{
         agent any
         stages {
-            stage('Clean') {
-                steps {
-                    cleanWs()
-                }
-            }
+
             stage('Make Directory'){
                 steps{
                     sh "mkdir ~/jenkins-tutorial-test"
